@@ -1,0 +1,7 @@
+cluster,cell_type,supporting_markers,n_cells
+0,T cells,CD3D,1182
+1,CD14+ Monocytes,LYZ;TYROBP;AIF1;LST1;S100A9;CST3,636
+2,NK cells,NKG7;GZMA;CTSW,427
+3,B cells,MS4A1;CD79A;CD79B,349
+4,Dendritic cells,FCER1A;HLA-DRA;HLA-DPB1;CD74,36
+5,Megakaryocytes,PPBP;PF4,13

@@ -1,0 +1,20 @@
+Datasets (all free, public 10x Genomics demo data; accessed 2026-10-31)
+
+1. scRNA-seq: PBMC 3k
+   - Name: pbmc3k_filtered_gene_bc_matrices
+   - Description: 3k peripheral blood mononuclear cells (PBMCs) from a healthy donor,
+     10x Chromium v1 chemistry, filtered feature-barcode matrix.
+   - Source URL: https://cf.10xgenomics.com/samples/cell/pbmc3k/pbmc3k_filtered_gene_bc_matrices.tar.gz
+   - Local path after download.sh: data/pbmc3k/filtered_gene_bc_matrices/hg19/
+   - Loaded with: scanpy.read_10x_mtx
+
+2. Spatial transcriptomics: Visium mouse brain (coronal section)
+   - Name: squidpy.datasets.visium_hne_adata()
+   - Description: 10x Visium spatial gene expression of adult mouse brain
+     coronal section (V1_Adult_Mouse_Brain), ~2.7k spots. Downloaded
+     programmatically; raw files cached under data/visium/ on first run of
+     scripts/02_spatial_analysis.py.
+   - NOTE: the brief preferred human lymph node, but squidpy's
+     visium_hne_adata() serves the mouse brain demo; the swap is stated here
+     and in the README (per the approved fallback).
+   - Loaded with: squidpy.datasets.visium_hne_adata()
